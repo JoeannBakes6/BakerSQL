@@ -1,0 +1,21 @@
+CREATE TABLE bikes(ID INTEGER PRIMARY KEY, SIZE TEXT, BRAND TEXT, AISLE INTEGER, PRICE INTEGER, COLOR TEXT);
+
+INSERT INTO bikes VALUES (1, "Small", "RideUSA", 1, 300, "Yellow");
+INSERT INTO bikes VALUES (2, "Medium", "RideUSA", 3, 550, "Gray");
+INSERT INTO bikes VALUES (3, "Small", "RideUSA", 1, 300, "Black");
+INSERT INTO bikes VALUES (4, "Large", "RideUSA", 5, 700, "White");
+INSERT INTO bikes VALUES (5, "Medium", "HaulUSA", 3, 500, "Pink");
+INSERT INTO bikes VALUES (6, "Small", "HaulUSA", 1, 300, "Turquios");
+INSERT INTO bikes VALUES (7, "Small", "RideUSA", 1, 300, "Silver");
+INSERT INTO bikes VALUES (8, "Small", "RideUSA", 1, 300, "Silver");
+INSERT INTO bikes VALUES (9, "Medium", "HaulUSA", 2, 500, "Magenta");
+INSERT INTO bikes VALUES (10, "Medium", "HaulUSA", 2, 500, "White");
+INSERT INTO bikes VALUES (11, "Medium", "HaulUSA", 2, 500, "Gold");
+INSERT INTO bikes VALUES (12, "Large", "RideUSA", 8, 750, "Silver");
+INSERT INTO bikes VALUES (13, "Large", "RideUSA", 8, 750, "Blue");
+INSERT INTO bikes VALUES (14, "Large", "RideUSA", 9, 450, "Orange");
+INSERT INTO bikes VALUES (15, "Large", "RideUSA", 9, 450, "Green");
+
+SELECT * FROM bikes ORDER BY PRICE;
+SELECT SUM(PRICE) FROM bikes;
+
